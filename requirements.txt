@@ -1,2 +1,2 @@
 flask == 2.2.2
-OpenCV == 3.3.0
+OpenCV == 3.1.0
