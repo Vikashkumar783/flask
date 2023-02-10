@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Streaming Video Recorder</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  h1 {
+    text-align: center;
+  }
+  
+</style>
+
+<style>
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+
+<style>
+  div {
+    text-align: center;
+  }
+  
+</style>
+
+
+<body style="background-color: #39393d;" >
+  <h1  style="background-color:#8283bd">Video Recorder</h1>
+  <div id="recorder" style="color:#ff6347"  display="block" >
+    <button id="record">Record</button>
+    <button id="stop">Stop</button>
+    <button id = "Click">click</button>
+    <button id = "preview">preview</button>
+
+    <a style="background-color:#1f8206" id="download"></a>
+    <script type="text/javascript" src="{{ url_for('static', filename='recorder.js') }}"></script>      
+  </div>
+  <img id="video" src="{{ url_for('video_viewer') }}" style="float: left;">
+
+  <img id="myImage"  alt="An example image" style="float: right;">
+  
+</body>
+</html>
+
